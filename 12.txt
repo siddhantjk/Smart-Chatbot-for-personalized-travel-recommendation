@@ -1,0 +1,12 @@
+SOLUTIONS:-
+You can see it's current value in mysql like this:
+
+SHOW VARIABLES LIKE 'max_allowed_packet'
+
+You can try to change it like this, but it's unlikely this will work on shared hosting:
+
+SET GLOBAL max_allowed_packet=16777216;
+and restart mysql service..
+
+
+
